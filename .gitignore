@@ -1,0 +1,9 @@
+node_modules
+.data
+examples/example.jpg
+examples/jigsaw/
+.nyc_output
+coverage
+test/test_data/results
+.coverage.lcov
+coverage.lcov
