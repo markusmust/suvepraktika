@@ -53,7 +53,7 @@
             var imageObj = [];
             var piecesArrayObj = [];
             frame.loadAssets(["nemo.jpg"], "assets/");
-
+/*
             var label = new Label({
                text:"CLICK",
                size:60,
@@ -64,7 +64,7 @@
             });
             stage.addChild(label);
             label.x = label.y = 20;
-            label.on("click", function(){zog("clicking");});
+            label.on("click", function(){zog("clicking");});*/
 
 
             frame.on("complete", function() {
@@ -72,7 +72,7 @@
 
                 imageObj = frame.asset("nemo.jpg").clone();
                 imageObj.addTo(con);
-                imageObj.alpha = 0.2;
+                imageObj.alpha = 0.3;
 
                 var piecesArray = new Array();
                 var horizontalPieces = 3;
@@ -96,7 +96,7 @@
                 imageObj.pos(puzzleX,puzzleY);
                 zog(puzzleX,puzzleY);
 
-                label.text = "Jigsaw Puzzle "+countPieces+"/"+totalPieces;
+               // label.text = "Jigsaw Puzzle "+countPieces+"/"+totalPieces;
 
 
                 for (j = 0; j < verticalPieces; j++) {
@@ -141,8 +141,8 @@
 
                             var xx = Math.round(mc.x);
                             var yy = Math.round(mc.y);
-
-                            if (xx < puzzleX+gap / 2 && xx > puzzleX-gap / 2 && yy < puzzleX+gap / 2 && yy > puzzleY-gap / 2) {
+// kui lähedalt kinni võtab tüki, mida väiksem seda lähemalt
+                            if (xx < puzzleX+gap / 0.3 && xx > puzzleX-gap / 0.3 && yy < puzzleX+gap / 0.3 && yy > puzzleY-gap / 0.3) {
                                  mc.x = puzzleX;
                                 mc.y = puzzleY;
                                 mc.noDrag();
@@ -151,7 +151,8 @@
                                 mc.mouseEnabled = false;
                                 mc.hint.visible = false;
                                 countPieces++;
-                                label.text = "Jigsaw Puzzle "+countPieces+"/"+totalPieces;
+                                /*label.text = "Jigsaw Puzzle "+countPieces+"/"+totalPieces;*/
+    // kui saad pusle kokku siis tekid uus label ja nupp ON ja seda vajutades resetib pusle
                                 zog("countPieces",countPieces);
                                 if(countPieces == totalPieces)
                                 {
