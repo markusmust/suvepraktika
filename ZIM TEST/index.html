@@ -10,7 +10,7 @@
     <!-- ZIM runs on the HTML Canvas powered by JavaScript and CreateJS http://createjs.com -->
     <!-- Founded by Inventor Dan Zen - http://danzen.com - Canadian New Media Award Winner 	-->
     <!-- ZIM is free to use. You can donate to help improve ZIM at http://zimjs.com/donate 	-->
-
+    <link rel="stylesheet" type="text/css" href="index.css">
     <script src="https://d309knd7es5f10.cloudfront.net/createjs_1.1_min.js"></script>
     <script>
         var zon = true; // set to false to turn off console messages from zim
@@ -27,7 +27,7 @@
         // "full"	sets stage to window size with no scaling
         // "tagID"	add canvas to HTML tag of ID - set to dimensions if provided - no scaling
 
-        var scaling = "fit"; // this will resize to fit inside the screen dimensions
+        var scaling = "canvasDiv"; // this will resize to fit inside the screen dimensions
         var width = 1024;
         var height = 768;
         var countPieces = 0;
@@ -44,7 +44,7 @@
 
             var puzzleX;
             var puzzleY;
-            frame.outerColor = "#444";
+            //frame.outerColor = "rgb(81, 137, 226)";
             frame.color = "#ddd";
 
             var con = new Container
@@ -156,9 +156,9 @@
                                 zog("countPieces",countPieces);
                                 if(countPieces == totalPieces)
                                 {
-                                    var pane = new Pane({width:600,label:"VERY NICE!", height:250, modal:false, displayClose:false});
+                                    var pane = new Pane({width:600,label:"Väga tubli!", height:250, modal:false, displayClose:false});
 
-                                    var confirm = new Button(120, 50, "ON", "green").center(pane).mov(0,70);
+                                    var confirm = new Button(120, 50, "Uuesti!", "green").center(pane).mov(0,70);
 
                                     confirm.on("click", function() {
                                         pane.hide();
@@ -271,7 +271,9 @@
 </head>
 
 <body>
+    <div id=canvasDiv>
     <!-- canvas with id="myCanvas" is made by zim Frame -->
+    </div>
 </body>
 
 </html>
