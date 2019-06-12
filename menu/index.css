@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(120, 184, 221);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("bright.jpg");
+}
+
+
+  #main {
+    width: 400px;
+    height: 100px;
+    display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #main div {
+    width: 70px;
+    height: 70px;
+  }
+
+  .buttoned{
+    height: 60px;
+    width: 180px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+    border-radius: 10px;
+    color: #1d89ff;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: inherit;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  }
+
