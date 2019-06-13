@@ -14,14 +14,23 @@
         var zon = true; // set to false to turn off console messages from zim
         var zns = false; // set to true to require zim namespace - eg. new zim.Frame()
     </script>
+    <script src="../../live/zim_9.4.2_doc.js"></script>
+    <!-- use zimjs.com/distill for minified individual functions! -->
+    <script src="https://d309knd7es5f10.cloudfront.net/pizzazz_02.js"></script>
     <script src="https://d309knd7es5f10.cloudfront.net/zim_6.9.0.js"></script>
     <!-- use zimjs.com/distill for minified individual functions! -->
     <script type="text/javascript" src ="index.js"></script>
     <meta name="viewport" content="width=device-width, user-scalable=no" />
 </head>
 <body>
-    <div id=canvasDiv>
+    <div id="canvasDiv">
     <!-- canvas with id="myCanvas" is made by zim Frame -->
     </div>
+    <button onclick="goBack()" class="nupp1">↩     Tagasi</button>
+    <script>
+    function goBack(){
+        location.replace("http://greeny.cs.tlu.ee/~markmus/veeb/js/suvepraktika/ZIM%20TEST%20kokku/menuindex.html")
+    }
+     </script>
 </body>
 </html>

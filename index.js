@@ -21,10 +21,13 @@
             var stageW = frame.width;
             var stageH = frame.height;
 
+            zim.OPTIMIZE = true;
+            Ticker.update = true;
+
             var puzzleX;
             var puzzleY;
             //frame.outerColor = "rgb(81, 137, 226)";
-            frame.color = "rgb(81, 137, 226)";
+            //frame.color = "rgb(81, 137, 226)";
 
             var con = new Container
 
@@ -120,7 +123,7 @@
 
                             var xx = Math.round(mc.x);
                             var yy = Math.round(mc.y);
-// kui lähedalt kinni võtab tüki, mida väiksem seda lähemalt
+                            // kui lähedalt kinni võtab tüki, mida väiksem seda lähemalt
                             if (xx < puzzleX+gap / 0.3 && xx > puzzleX-gap / 0.3 && yy < puzzleX+gap / 0.3 && yy > puzzleY-gap / 0.3) {
                                  mc.x = puzzleX;
                                 mc.y = puzzleY;
@@ -131,10 +134,18 @@
                                 mc.hint.visible = false;
                                 countPieces++;
                                 /*label.text = "Jigsaw Puzzle "+countPieces+"/"+totalPieces;*/
-    // kui saad pusle kokku siis tekid uus label ja nupp ON ja seda vajutades resetib pusle
+                                // kui saad pusle kokku siis tekid uus label ja nupp ON ja seda vajutades resetib pusle
+                                var audio = new Audio('assets/puzzlePieceRight.mp3');
+                                audio.currentTime=0;
+                                audio.play();
+                                // audio from http://soundbible.com/tags-cheer.html
+
                                 zog("countPieces",countPieces);
                                 if(countPieces == totalPieces)
-                                {
+                                {   
+                                    var audio = new Audio('assets/puzzleCompleted.mp3');
+                                    audio.play();
+                                    //audio from https://www.zapsplat.com/music/crowd-of-25-people-male-and-female-cheer-shout-yay/
                                     var pane = new Pane({width:350,label:"Väga tubli!", height:225, modal:false, displayClose:false});
 
                                     var confirm = new Button(120, 50, "Uuesti!", "green").center(pane).mov(0,70);
