@@ -1,27 +1,74 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Puslemäng - ZIM teek</title>
     <!-- Welcome to ZIM at http://zimjs.com - Code Interactive Media Pizzazz! 	        -->
     <!-- ZIM runs on the HTML Canvas powered by JavaScript and CreateJS http://createjs.com -->
     <!-- Founded by Inventor Dan Zen - http://danzen.com - Canadian New Media Award Winner 	-->
     <!-- ZIM is free to use. You can donate to help improve ZIM at http://zimjs.com/donate 	-->
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <script src="https://d309knd7es5f10.cloudfront.net/createjs_1.1_min.js"></script>
     <script>
-        var zon = true; // set to false to turn off console messages from zim
-        var zns = false; // set to true to require zim namespace - eg. new zim.Frame()
+      var zon = true; // set to false to turn off console messages from zim
+      var zns = false; // set to true to require zim namespace - eg. new zim.Frame()
     </script>
+    <script src="../../live/zim_9.4.2_doc.js"></script>
+    <!-- use zimjs.com/distill for minified individual functions! -->
+    <script src="https://d309knd7es5f10.cloudfront.net/pizzazz_02.js"></script>
     <script src="https://d309knd7es5f10.cloudfront.net/zim_6.9.0.js"></script>
     <!-- use zimjs.com/distill for minified individual functions! -->
-    <script type="text/javascript" src ="index.js"></script>
+    <script type="text/javascript" src="index.js"></script>
     <meta name="viewport" content="width=device-width, user-scalable=no" />
-</head>
-<body>
-    <div id=canvasDiv>
-    <!-- canvas with id="myCanvas" is made by zim Frame -->
+  </head>
+  <body>
+    <div id="canvasDiv">
+      <!-- canvas with id="myCanvas" is made by zim Frame -->
     </div>
-</body>
+    <div class="audios">
+      <audio
+        class="audio"
+        id="puzzlePieceRight"
+        src="assets/puzzlePieceRight.mp3"
+      ></audio>
+      <audio
+        class="audio"
+        id="puzzleCompleted"
+        src="assets/puzzleCompleted.mp3"
+      ></audio>
+    </div>
+    <div class="onoffswitch">
+      <input
+        onclick="muteSound()"
+        type="checkbox"
+        name="onoffswitch"
+        class="onoffswitch-checkbox"
+        id="myonoffswitch"
+        checked="checked"
+      />
+      <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+      </label>
+    </div>
+    <script>
+      function goBack() {
+        location.replace(
+          "http://greeny.cs.tlu.ee/~markmus/veeb/js/suvepraktika/ZIM%20TEST%20kokku/menuindex.html"
+        );
+      }
+      function muteSound() {
+        const switcher = document.querySelector("#myonoffswitch");
+        const audios = document.querySelectorAll(".audio");
+        audios.forEach(el => {
+          el.muted = currentTime = 0;
+          el.muted = !switcher.checked;
+          
+          
+        });
+      }
+      window.onload = function() {
+        muteSound();
+      };
+    </script>
+  </body>
 </html>

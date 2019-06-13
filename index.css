@@ -11,4 +11,77 @@
     right: 0;
 }
 
-body {background-color: rgb(81, 137, 226);}
+#fit {
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 1600px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+body {
+    background-color:rgb(120, 184, 221);
+    background-image: url("assets/bright.jpg");
+
+}
+
+#myCanvas{
+    z-index: -1;
+}
+
+.nupp1{
+    height: 60px;
+    width: 180px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+    border-radius: 10px;
+    color: #1d89ff;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: inherit;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+} 
+
+.onoffswitch {
+    position: relative; width:50px;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -80%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: url("speaker.png");
+    padding-left: 10px;
+    background-color: white;
+}
+.onoffswitch-inner:after {
+    content: url("mute.png");
+    padding-right: 10px;
+    background-color:white;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    right: 0px; 
+}
