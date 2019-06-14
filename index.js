@@ -4,13 +4,23 @@
         // "outside"	sets canvas and stage to dimensions and scales to fit outside window size
         // "full"	sets stage to window size with no scaling
         // "tagID"	add canvas to HTML tag of ID - set to dimensions if provided - no scaling
-
+        
         var scaling = "canvasDiv"; // this will resize to fit inside the screen dimensions
         var width = 1600;
         var height = 1000;
         var countPieces = 0;
         var totalPieces = 0;
         var counterL = 0;
+        var horizontalPieces = 3;
+        var verticalPieces = 3;
+
+        //function chooseSettings(){
+        //    horizontalPieces = 4;
+       //    verticalPieces = 4;
+        //    console.log(horizontalPieces, verticalPieces)
+        //    
+        //}
+        //chooseSettings();
         // as of ZIM 5.5.0 you do not need to put zim before ZIM functions and classes
         var frame = new Frame(scaling, width, height);
         frame.on("ready", function()
@@ -55,10 +65,12 @@
                 imageObj = frame.asset("nemo.jpg").clone();
                 imageObj.addTo(con);
                 imageObj.alpha = 0.3;
-
+                
                 var piecesArray = new Array();
-                var horizontalPieces = 3;
-                var verticalPieces = 3;
+                
+                //var horizontalPieces = 3;
+                //var verticalPieces = 3;
+
                 var obj = getQueryString();
                 zog(obj)
                 if(obj)

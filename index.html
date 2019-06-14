@@ -44,12 +44,22 @@
         name="onoffswitch"
         class="onoffswitch-checkbox"
         id="myonoffswitch"
+        checked="checked"
       />
       <label class="onoffswitch-label" for="myonoffswitch">
         <span class="onoffswitch-inner"></span>
       </label>
     </div>
-    <button id="settings" ><img src=""></button>
+    <div class="dropdown">
+      <button onclick="dropdown()" class="dropbtn"></button>
+      <div id="myDropdown" class="dropdown-content">
+        <h>Tükkide arv</a>
+        <a type="button" onclick="chooseSettings()" class="ddbuttons">3x3</a>
+        <a type="button" onclick="chooseSettings1()" class="ddbuttons">4x4</a>
+        <a type="button" onclick="chooseSettings2()" class="ddbuttons">5x5</a>
+      </div>
+    </div>
+    <!--image from https://pixabay.com/vectors/wrench-tool-settings-spanner-gear-47453/ but changed-->
     <script>
       function muteSound() {
         const switcher = document.querySelector("#myonoffswitch");
@@ -67,7 +77,26 @@
       }
       window.onload = function() {
         muteSound();
-      };
+      }
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function dropdown() {
+      document.getElementById("myDropdown").classList.toggle("show");
+      }
+  
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
     </script>
   </body>
 </html>
