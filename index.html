@@ -60,9 +60,13 @@
         const switcher = document.querySelector("#myonoffswitch");
         const audios = document.querySelectorAll(".audio");
         audios.forEach(el => {
-          el.muted = currentTime = 0;
           el.muted = !switcher.checked;
-          
+          //Kui tahta, et kohesel heli uuesti sisselülitamisel ei kõlaks audio osa, mis pola veel läbi saanud. 
+          //Muidu ilma if-ita audio fail käib ka mute peal edasi, kuigi seda ei kuule ning heli mute pealt 
+          //koheselt maha võttes, kuuleb seda edasi.
+          if(el.muted){
+            el.currentTime=10;
+          }
           
         });
       }
