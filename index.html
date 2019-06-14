@@ -44,18 +44,13 @@
         name="onoffswitch"
         class="onoffswitch-checkbox"
         id="myonoffswitch"
-        checked="checked"
       />
       <label class="onoffswitch-label" for="myonoffswitch">
         <span class="onoffswitch-inner"></span>
       </label>
     </div>
+    <button id="settings" ><img src=""></button>
     <script>
-      function goBack() {
-        location.replace(
-          "http://greeny.cs.tlu.ee/~markmus/veeb/js/suvepraktika/ZIM%20TEST%20kokku/menuindex.html"
-        );
-      }
       function muteSound() {
         const switcher = document.querySelector("#myonoffswitch");
         const audios = document.querySelectorAll(".audio");

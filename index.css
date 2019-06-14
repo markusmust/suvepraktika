@@ -69,11 +69,13 @@ body {
     box-sizing: border-box;
 }
 .onoffswitch-inner:before {
+    /* image from https://pixabay.com/vectors/audio-sound-speaker-button-voice-150191/ */
     content: url("speaker.png");
     padding-left: 10px;
     background-color: white;
 }
 .onoffswitch-inner:after {
+    /* image from https://pixabay.com/vectors/audio-sound-speaker-button-voice-150191/ but changed*/
     content: url("mute.png");
     padding-right: 10px;
     background-color:white;
