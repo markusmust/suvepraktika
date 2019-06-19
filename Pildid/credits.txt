@@ -1,0 +1,17 @@
+Animals
+
+Lamb:Image by bknis from Pixabay.
+Cat:Image by tina matzinger from Pixabay 
+Dog:Image by Clker-Free-Vector-Images from Pixabay 
+Horse:Image by Clker-Free-Vector-Images from Pixabay 
+
+Fruits:
+
+Strawberry: Image by Clker-Free-Vector-Images from Pixabay 
+Apple: Image by OpenClipart-Vectors from Pixabay 
+Pear: Image by Eelffica from Pixabay 
+Cherries: Image by Johanna Pakkala from Pixabay 
+
+Vegetables: All images by OpenClipart-Vectors from Pixabay
+
+
