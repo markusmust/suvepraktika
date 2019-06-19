@@ -1,0 +1,197 @@
+#fit {
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 1600px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+body {
+    background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
+    -webkit-animation: 10s linear 0s normal none infinite animate;
+    -moz-animation: 10s linear 0s normal none infinite animate;
+    -ms-animation: 10s linear 0s normal none infinite animate;
+    -o-animation: 10s linear 0s normal none infinite animate;
+    animation: 10s linear 0s normal none infinite animate;
+  }
+  @-webkit-keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+  }
+  
+  @-moz-keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+  }
+  
+  @-ms-keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+  }
+  
+  @-o-keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+  }
+  
+  @keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+  }
+
+#myCanvas{
+    z-index: -1;
+}
+
+.nupp1{
+    height: 60px;
+    width: 180px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+    border-radius: 10px;
+    color: #1d89ff;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: inherit;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+} 
+
+.onoffswitch {
+    position: relative; width:50px;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -80%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    /* image from https://pixabay.com/vectors/audio-sound-speaker-button-voice-150191/ */
+    content: url("assets/speaker.png");
+    padding-left: 10px;
+    background-color: white;
+}
+.onoffswitch-inner:after {
+    /* image from https://pixabay.com/vectors/audio-sound-speaker-button-voice-150191/ but changed*/
+    content: url("assets/mute.png");
+    padding-right: 10px;
+    background-color:white;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    right: 0px; 
+} 
+
+.balloon.blue{
+  position:absolute;
+  width:534px;
+  height:720px;
+    transform: scale(0.3);
+    /*background-image: url("https://cdn.pixabay.com/photo/2014/03/24/17/19/birthday-party-295384_960_720.png");*/
+    background-image: url(assets/Balloon_blue.png);
+    opacity: 0.9;
+    z-index: 1;
+}
+.balloon.green{
+    position:absolute;
+    width:534px;
+    height:720px;
+    transform: scale(0.3);
+    background-image: url(assets/Balloon_green.png);
+    opacity: 0.9;
+    z-index: 1;
+}
+.balloon.lightblue{
+    position:absolute;
+    width:534px;
+    height:720px;
+    transform: scale(0.3);
+    background-image: url(assets/Balloon_lightblue.png);
+    opacity: 0.9;
+    z-index: 1;
+}
+.balloon.pink{
+    position:absolute;
+    width:534px;
+    height:720px;
+    transform: scale(0.3);
+    background-image: url(assets/Balloon_pink.png);
+    opacity: 0.9;
+    z-index: 1;
+}
+.balloon.red{
+    position:absolute;
+    width:534px;
+    height:720px;
+    transform: scale(0.3);
+    background-image: url(assets/Balloon_red.png);
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.balloon.yellow{
+    position:absolute;
+    width:534px;
+    height:720px;
+    transform: scale(0.3);
+    background-image: url(assets/Balloon_yellow.png);
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.balloon.blue.bobX{
+    transform: scale(0.35, 0.3);
+}
+.balloon.blue.bobY{
+    transform: scale(0.3, 0.35);
+}
+.balloon.green.bobX{
+    transform: scale(0.35, 0.3);
+}
+.balloon.green.bobY{
+    transform: scale(0.3, 0.35);
+}
+.balloon.lightblue.bobX{
+    transform: scale(0.35, 0.3);
+}
+.balloon.lightblue.bobY{
+    transform: scale(0.3, 0.35);
+}
+.balloon.pink.bobX{
+    transform: scale(0.35, 0.3);
+}
+.balloon.pink.bobY{
+    transform: scale(0.3, 0.35);
+}
+.balloon.red.bobX{
+    transform: scale(0.35, 0.3);
+}
+.balloon.red.bobY{
+    transform: scale(0.3, 0.35);
+}
+.balloon.yellow.bobX{
+    transform: scale(0.35, 0.3);
+}
+.balloon.yellow.bobY{
+    transform: scale(0.3, 0.35);
+}
