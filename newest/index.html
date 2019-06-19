@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no"/>
+<title>Menüü</title>
+<link type='text/css' rel='stylesheet' href='index.css'/>
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Swanky+and+Moo+Moo|Ubuntu&display=swap" rel="stylesheet">
+<script type='text/javascript' src='index.js'></script>
+<script type='text/javascript' src='module.js'></script>
+<header id="header">
+        <h3 id="headertext">Eesti puslemäng</h3>
+
+         </header>
+</head>
+<body>
+    <center>
+    <div id="main">
+<!--..............................MAIN MENU.................................-->
+        <div id="Page1" class="page" style="">
+          <button onclick="show('Page2')"class="buttoned">Loomad</button>
+          <button onclick="show('Page3')"class="buttoned">Puuviljad</button>
+          <button onclick="show('Page4')"class="buttoned">Köögiviljad</button>
+          <button onclick="show('Page5')"class="buttoned">Mänguasjad</button>
+          <button onclick="show('Page6')"class="buttoned">Sõiduvahendid</button>
+        </div>
+<!--..............................LOOMAD.................................-->
+        <div id="Page2" class="page" style="display:none">
+          <button onclick="show('Page1')" class="buttoned">Menüü</button>
+          <h1>Loomad</h1>
+
+          <form action="pusleindex.html">
+            <input type="submit" value="Kass" class="buttoned"  onclick="foo(this)"/>
+          </form>
+
+          <form action="pusleindex.html">
+            <input type="submit" value="Hobune" class="buttoned" onclick="foo(this)"/>
+           </form>
+
+          <form action="pusleindex.html">
+            <input type="submit" value="Lammas" class="buttoned" onclick="foo(this)"/>
+          </form>
+
+          <form action="pusleindex.html">
+            <input type="submit" value="Koer" class="buttoned" onclick="foo(this)"/>
+          </form>
+        </div>
+<!--..............................PUUVILJAD.................................-->
+        <div id="Page3" class="page" style="display:none">
+          <button onclick="show('Page1')"class="buttoned">Menüü</button>
+          <h1>Puuviljad</h1>
+
+        <form action="pusleindex.html">
+          <input type="submit" value="Õun" class="buttoned"  onclick="foo(this)"/>
+        </form>
+
+        <form action="pusleindex.html">
+          <input type="submit" value="Pirn" class="buttoned" onclick="foo(this)"/>
+         </form>
+
+        <form action="pusleindex.html">
+          <input type="submit" value="Kirsid" class="buttoned" onclick="foo(this)"/>
+        </form>
+
+        <form action="pusleindex.html">
+          <input type="submit" value="Maasikas" class="buttoned" onclick="foo(this)"/>
+        </form>
+      </div>
+
+<!--..............................Köögiviljad.................................-->
+        <div id="Page4" class="page" style="display:none">
+          <button onclick="show('Page1')"class="buttoned">Menüü</button>
+          <h1>Köögiviljad</h1>
+
+          <form action="pusleindex.html">
+            <input type="submit" value="Tomat" class="buttoned"  onclick="foo(this)"/>
+          </form>
+
+          <form action="pusleindex.html">
+            <input type="submit" value="Porgand" class="buttoned" onclick="foo(this)"/>
+           </form>
+
+          <form action="pusleindex.html">
+            <input type="submit" value="Paprika" class="buttoned" onclick="foo(this)"/>
+          </form>
+
+          <form action="pusleindex.html">
+            <input type="submit" value="Kurk" class="buttoned" onclick="foo(this)"/>
+          </form>
+        </div>
+
+<!--..............................MÄNGUASJAD.................................-->
+        <div id="Page5" class="page" style="display:none">
+          <button onclick="show('Page1')"class="buttoned">Menüü</button>
+          <h1>Mänguasjad</h1>
+
+          <form action="pusleindex.html">
+            <input type="submit" value="Robot" class="buttoned"  onclick="foo(this)"/>
+          </form>
+
+          <form action="pusleindex.html">
+            <input type="submit" value="Rannapall" class="buttoned" onclick="foo(this)"/>
+           </form>
+
+          <form action="pusleindex.html">
+            <input type="submit" value="Lego" class="buttoned" onclick="foo(this)"/>
+          </form>
+
+          <form action="pusleindex.html">
+            <input type="submit" value="Ruubikukuubik" class="buttoned" onclick="foo(this)"/>
+          </form>
+        </div>
+
+<!--..............................SÕIDUVAHENDID.................................-->
+        <div id="Page6" class="page" style="display:none">
+          <button onclick="show('Page1')"class="buttoned">Menüü</button>
+          <h1>Sõiduvahendid</h1>
+
+          <form action="pusleindex.html">
+            <input type="submit" value="Auto" class="buttoned"  onclick="foo(this)"/>
+          </form>
+
+          <form action="pusleindex.html">
+            <input type="submit" value="Mootorratas" class="buttoned" onclick="foo(this)"/>
+           </form>
+
+          <form action="pusleindex.html">
+            <input type="submit" value="Lennuk" class="buttoned" onclick="foo(this)"/>
+          </form>
+
+          <form action="pusleindex.html">
+            <input type="submit" value="Rong" class="buttoned" onclick="foo(this)"/>
+          </form>
+        </div>
+
+
+    </div>
+    </center>
+
+
+</body>
+</html>
