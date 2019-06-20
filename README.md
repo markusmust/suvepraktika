@@ -7,7 +7,7 @@ mudilane pusle edukal kokkupanekul kiita.
 
 Projekt on loodud Tallinna Ülikooli DTI instituudi Tarkvaraarenduse praktika aine raames.
 
-Kasutatud tehnoloogiad ja nende versioonid: HTML 5, Javascript ja CSS. (võiks detailsem olla, lisada Zim'i täpsem nimetus ja versioon)
+Kasutatud tehnoloogiad ja nende versioonid: Kasutatud programmeerimiskeeled on HTML 5, Javascript ja CSS. Lisaks pusle moodustamiseks teek ZIM 6.9.0.
 
 Projekti panustasid:
 Markus Must
