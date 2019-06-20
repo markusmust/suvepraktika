@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(120, 184, 221);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("bg.jpg");}
+
+
+  #main {
+    width: 400px;
+    height: 100px;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  h1{
+    color: rgb(226, 185, 212);
+    text-shadow: 1 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    font-family: 'Indie Flower', cursive;
+  }
+
+
+  .buttoned{
+    height: 60px;
+    width: 180px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 3px dotted white;
+    border-radius: 10px;
+    color: rgb(226, 185, 212);
+    font-weight: 1000;
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+    box-shadow: 1 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    display: inline-block;
+    margin: 10px;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(255,255,255, .22);
+ 
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+ 
+  }
+
+#header{
+  width: 100%;
+  background: rgb(226, 185, 212);
+  background: rgb(226, 185, 212);
+  color: #eee;
+  letter-spacing: 1px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  box-shadow: 0 19px 38px rgba(201, 67, 194, 0.3), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+#headertext{
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+}

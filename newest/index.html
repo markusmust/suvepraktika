@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, user-scalable=no"/>
+<title>Menüü</title>
+<link type='text/css' rel='stylesheet' href='index.css'/>
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Swanky+and+Moo+Moo|Ubuntu&display=swap" rel="stylesheet">
+<script type='text/javascript' src='index.js'></script>
+<script type='text/javascript' src='module.js'></script>
+<header id="header">
+        <h3 id="headertext">Eesti puslemäng</h3>
+        
+         </header>
+</head>
+<body>
+    <center>
+    <div id="main">
+<!--..............................MAIN MENU.................................-->
+        <div id="Page1" class="page" style="">
+          <button onclick="show('Page2')"class="buttoned">Loomad</button>
+          <button onclick="show('Page3')"class="buttoned">Transport</button>
+          <button onclick="show('Page4')"class="buttoned">Värvid</button>
+          <button onclick="show('Page5')"class="buttoned">Mänguasjad</button>
+        </div>
+<!--..............................LOOMAD.................................-->
+        <div id="Page2" class="page" style="display:none">
+          <button onclick="show('Page1')" class="buttoned">Menüü</button>
+          <h1>Loomad</h1>
+
+          <form action="pusleindex.html">
+            <input type="submit" value="nemo" class="buttoned"  onclick="foo(this)"/>
+          </form>
+
+          <form action="pusleindex.html">
+            <input type="submit" value="dog" class="buttoned" onclick="foo(this)"/>
+           </form>
+          
+          <form action="pusleindex.html">
+            <input type="submit" value="dog2" class="buttoned" onclick="foo(this)"/>
+          </form>
+
+          <form action="pusleindex.html">
+            <input type="submit" value="dog3" class="buttoned" onclick="foo(this)"/>
+          </form>
+        </div>
+<!--..............................TRANSPORT.................................-->
+        <div id="Page3" class="page" style="display:none">
+          <button onclick="show('Page1')"class="buttoned">Menüü</button>
+          <h1>Transport</h1>
+        </div>
+
+<!--..............................VÄRVID.................................-->
+        <div id="Page4" class="page" style="display:none">
+          <button onclick="show('Page1')"class="buttoned">Menüü</button>
+          <h1>Värvid</h1>
+        </div>
+
+<!--..............................MÄNGUASJAD.................................-->
+        <div id="Page5" class="page" style="display:none">
+          <button onclick="show('Page1')"class="buttoned">Menüü</button>
+          <h1>Mänguasjad</h1>
+        </div>
+
+
+    </div>
+    </center>
+
+    
+</body>
+</html>

@@ -1,0 +1,219 @@
+body{
+  background-color: rgb(120, 184, 221);
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
+  -webkit-animation: 10s linear 0s normal none infinite animate;
+  -moz-animation: 10s linear 0s normal none infinite animate;
+  -ms-animation: 10s linear 0s normal none infinite animate;
+  -o-animation: 10s linear 0s normal none infinite animate;
+  animation: 10s linear 0s normal none infinite animate;
+}
+@-webkit-keyframes animate {
+from {background-position:0 0;}
+to {background-position: 500px 0;}
+}
+
+@-moz-keyframes animate {
+from {background-position:0 0;}
+to {background-position: 500px 0;}
+}
+
+@-ms-keyframes animate {
+from {background-position:0 0;}
+to {background-position: 500px 0;}
+}
+
+@-o-keyframes animate {
+from {background-position:0 0;}
+to {background-position: 500px 0;}
+}
+
+@keyframes animate {
+from {background-position:0 0;}
+to {background-position: 500px 0;}
+}
+
+
+#main {
+  width: 400px;
+  height: 100px;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1{
+  color: #55cf5f;
+  text-shadow: 1 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  font-family: 'Indie Flower', cursive;
+  font-size: 32px;
+}
+
+
+.buttoned{
+  height: 60px;
+  width: 185px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #55cf5f;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  color: rgb(10, 13, 68);
+  font-weight: 1000;
+  font-size: 20px;
+  font-family: 'B612 Mono', monospace;
+  box-shadow: 0 19px 38px rgba(88, 70, 70, 0.3), 0 15px 12px rgba(0,0,0,0.22);
+  display: inline-block;
+  margin: 10px;
+  padding: 0 20px;
+  text-align: center;
+  border-radius: 10px;
+  letter-spacing: 1px;
+
+}
+.buttoned:hover{
+  color: blue;
+}
+
+
+.apple{
+  background-size: 100%;
+  background-size: 185px 60px;
+  background-image: url('assets/Õun.jpg');
+}
+
+.pear{
+  background-size: 100%;
+  background-size: 185px 60px;
+  background-image: url('assets/Pirn.jpg');
+}
+
+.cherry{
+  background-size: 100%;
+  background-size: 185px 60px;
+  background-image: url('assets/Kirsid.jpg');
+}
+
+.strawberry{
+  background-size: 100%;
+  background-size: 185px 60px;
+  background-image: url('assets/Maasikas.jpg');
+}
+
+.cat{
+  background-size: 100%;
+  background-size: 185px 60px;
+  background-image: url('assets/Kass.jpg');
+}
+
+.horse{
+  background-size: 100%;
+  background-size: 185px 60px;
+  background-image: url('assets/Hobune.jpg');
+}
+
+.dog{
+  background-size: 100%;
+  background-size: 185px 60px;
+  background-image: url('assets/Koer.jpg');
+}
+
+.sheep{
+  background-size: 100%;
+  background-size: 185px 60px;
+  background-image: url('assets/Lammas.jpg');
+}
+
+.tomato{
+  background-size: 100%;
+  background-size: 185px 60px;
+  background-image: url('assets/Tomat.jpg');
+}
+
+.carrot{
+  background-size: 100%;
+  background-size: 185px 60px;
+  background-image: url('assets/Porgand.jpg');
+}
+
+.paprika{
+  background-size: 100%;
+  background-size: 185px 60px;
+  background-image: url('assets/Paprika.jpg');
+}
+
+.cucumber{
+  background-size: 100%;
+  background-size: 185px 60px;
+  background-image: url('assets/Kurk.jpg');
+}
+
+.robot{
+  background-size: 100%;
+  background-size: 185px 60px;
+  background-image: url('assets/Robot.jpg');
+}
+
+.ball{
+  background-size: 100%;
+  background-size: 185px 60px;
+  background-image: url('assets/Rannapall.jpg');
+}
+
+.lego{
+  background-size: 100%;
+  background-size: 185px 60px;
+  background-image: url('assets/Lego.jpg');
+}
+
+.cubic{
+  background-size: 100%;
+  background-size: 185px 60px;
+  background-image: url('assets/Ruubikukuubik.jpg');
+}
+
+.car{
+  background-size: 100%;
+  background-size: 185px 60px;
+  background-image: url('assets/Auto.jpg');
+}
+
+.bike{
+  background-size: 100%;
+  background-size: 185px 60px;
+  background-image: url('assets/Mootorratas.jpg');
+}
+
+.plane{
+  background-size: 100%;
+  background-size: 185px 60px;
+  background-image: url('assets/Lennuk.jpg');
+}
+
+.train{
+  background-size: 100%;
+  background-size: 185px 60px;
+  background-image: url('assets/Rong.jpg');
+}
+
+
+#headertext{
+color: #55cf5f;
+text-align: center;
+font-family: 'B612 Mono', monospace;
+font-size: 60px;
+width: 100%;
+height: 0%;
+letter-spacing: 2px;
+position: absolute;
+text-align: center;
+top: 0;
+left: 0;
+z-index: 99;
+text-shadow: 0 19px 38px rgba(88, 70, 70, 0.3), 0 15px 12px rgba(0,0,0,0.22);
+}
