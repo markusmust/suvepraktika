@@ -9,11 +9,7 @@ Projekt on loodud Tallinna Ülikooli DTI instituudi Tarkvaraarenduse praktika ai
 
 Kasutatud tehnoloogiad ja nende versioonid: Kasutatud programmeerimiskeeled on HTML 5, Javascript ja CSS. Lisaks pusle moodustamiseks teek ZIM 6.9.0.
 
-Projekti panustasid:
-Markus Must
-Johanna Maarja Eller
-Rait Väiko
-Revor Jan Nuiamäe
+Projekti panustasid: Markus Must, Johanna Maarja Eller, Rait Väiko, Revor Jan Nuiamäe
 
 Kaitstud MIT litsensiga: http://www.opensource.org/licenses/mit-license.php
 
